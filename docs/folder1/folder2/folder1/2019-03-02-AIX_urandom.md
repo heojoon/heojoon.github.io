@@ -1,12 +1,8 @@
----
-layout: post
-title: AIX OS의 /dev/random과 /dev/urandom 차이점
-tag:  AIX
-subtitle: AIX WAS 설정 시 참고자료
----
+
 
 
 # IBM AIX OS의 /dev/random 과 /dev/urandom 차이점
+### subtitle: AIX WAS 설정 시 참고자료
 
 /dev/random 및 /dev/urandom  chractor 디바이스는  인터럽트 타이밍 또는 디바이스에 기록 된 입력으로부터 생성 된 암호학적으로 안전한 랜덤 출력을 제공합니다.
 
