@@ -1,3 +1,3 @@
 git add .
-git commit -m "Add post"
+git commit -m "fix syntax in some posts"
 git push
