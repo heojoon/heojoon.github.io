@@ -1,6 +1,6 @@
 # MacOSX_NTFS_HDD_Write_방법
 
-## Mac OS X 의 NTFS HDD 읽기 쓰기 
+ * Mac OS X 의 NTFS HDD 읽기 쓰기 
 
 
 MacBook 에서 윈도우에서 쓰던 외장하드를 붙였더니 읽기 전용으로 나온다.
@@ -11,10 +11,8 @@ MacBook 에서 윈도우에서 쓰던 외장하드를 붙였더니 읽기 전용
 
 이를 해결하기 위해서는 2가 방법이 있다.
 
---- 
-1 : Mac OS 용 Paragon Software (유료) 
-2 : 오픈소스 NTFS-3G (무료)
----
+1. Mac OS 용 Paragon Software (유료) 
+2. 오픈소스 NTFS-3G (무료)
 
 
 

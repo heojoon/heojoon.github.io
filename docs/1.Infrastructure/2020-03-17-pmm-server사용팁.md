@@ -1,8 +1,8 @@
 # Mysql모니터링툴_PMM-SERVER
 
-## PMM-SERVER_구축시_노하우 
+* PMM-SERVER_구축시_노하우 
 
-### Delete Infomation of host in DB
+* Delete Infomation of host in DB
 
 MySQL 모니터링을 위한 오픈소스를 찾아봤는데 쓸만한게 많이 없더라, 그중에 PMM-SERVER 라는 모니터링 툴을 찾아서 설치하였다.
 

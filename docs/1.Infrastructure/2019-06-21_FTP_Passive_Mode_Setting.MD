@@ -1,6 +1,6 @@
 # FTP Passive Mode 설정 및 사용하기
 
-## ftp passivemode
+* ftp passivemode
 
 (1) FTP 서버 Passive Mode 설정
 
