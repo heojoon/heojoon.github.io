@@ -1,6 +1,6 @@
-# AWS EC2 server infomation list up and connect server by ssh
+# Get AWS EC2 list and Connect
 
-~~~
+~~~python
 # -------------------------------------------
 #  AWS EC2 server batch control by ssh v0.1
 # -------------------------------------------
