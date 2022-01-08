@@ -1,0 +1,10 @@
+# AWS 아키텍처 설계시 주요 모범사례
+
+1. VPC endpoint를 사용한다.
+ - VPC 엔트포인트는 AWS Private Link 를 통하여 AWS 서비스 및 VPC 엔트포인트 서비스에 비공개로 연결 할 수 있다.
+ - VPC의 인스턴스는 서비스의 리소스와 통신하는데 퍼블링 IP가 필요하거나 트래픽이 Amazon 네트워크를 벗어나지 않는다.
+ - ex) private 서브넷의 ec2와 s3 , dynamodb 등과 연결시 구성한다.
+ - 지원 서비스
+  - interface Endpoint : Private ip를 만들어 서비스로 연결 (SQS, SNS , Kinesis 등)
+  - Gateway Endpoint : 라우팅 테이블에서 경로의 대상을 지정하여 연결 (S3, Dynamodb 등)
+  2. 
