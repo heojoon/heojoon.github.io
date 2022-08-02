@@ -45,4 +45,3 @@ if __name__ == '__main__':
     
     with Pool(4) as p:
         p.map(remove_vpc, regions)
-~~~python
