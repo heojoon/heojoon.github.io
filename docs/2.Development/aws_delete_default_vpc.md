@@ -1,3 +1,7 @@
+- aws 기본 vpc를 삭제하는 python script 
+
+
+~~~python
 from multiprocessing import Pool
 import boto3
 
@@ -41,3 +45,4 @@ if __name__ == '__main__':
     
     with Pool(4) as p:
         p.map(remove_vpc, regions)
+~~~python
