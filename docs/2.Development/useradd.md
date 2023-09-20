@@ -19,13 +19,13 @@ if [ Z"`cat /etc/group | grep $group`" == Z  ]; then
 fi
 
 useradd -g $group $user
-echo "${user}1!" | password --stdin ${user}
+echo "${user}1!" | passwd --stdin ${user}
 
 if [ $group == "SECL" ]; then
-        echo "${user} ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers.d/91.admins
+        echo "${user} ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers.d/91-admins
         chage -E ${expire_date} ${user}
 else
-        echo "${user} ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers.d/92.developers
+        echo "${user} ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers.d/92-developers
         chage -E ${expire_date} ${user}
 fi
 ~~~
