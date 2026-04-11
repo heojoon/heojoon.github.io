@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>영어 단어 시험</title>
+<style>
+  body { font-family: Arial; max-width: 600px; margin: 40px auto; }
+  h1 { text-align: center; }
+  .question { margin-bottom: 15px; }
+  input { width: 100%; padding: 8px; }
+  button { padding: 10px 15px; margin-top: 20px; }
+  .result { margin-top: 20px; font-weight: bold; }
+</style>
+</head>
+<body>
+
+<h1>영어 단어 시험</h1>
+<div id="quiz"></div>
+<button onclick="checkAnswers()">제출</button>
+<div class="result" id="result"></div>
+
+<script>
+const questions = [
+["허구의","fictional"],["범죄","crime"],["의류","clothing"],["탐정","detective"],
+["오직","solely"],["추론","inference"],["범죄자","criminal"],["전설적인","legendary"],
+["특기","specialty"],["관찰","observation"],["고객","client"],["얼룩","stain"],
+["조사관","investigator"],["추정하다","assume"],["직업","occupation"],
+["특별한","extraordinary"],["모험","adventure"],["방법","method"],
+["콧수염이 있는","mustached"],["특정한","particular"],["밝히다","reveal"],
+["능숙하게","expertly"],["심리학","psychology"],["저지르다","commit"],
+["성격","personality"],["시리즈","series"],["뛰어난","exceptional"],
+["묘사하다","describe"],["수출하다","export"],["스릴러","thriller"]
+];
+
+const quizDiv = document.getElementById("quiz");
+
+questions.forEach((q, i) => {
+  quizDiv.innerHTML += `
+    <div class="question">
+      ${i+1}. ${q[0]}<br>
+      <input type="text" id="q${i}">
+    </div>
+  `;
+});
+
+function checkAnswers() {
+  let score = 0;
+  questions.forEach((q, i) => {
+    const user = document.getElementById(`q${i}`).value.trim().toLowerCase();
+    if(user === q[1]) score++;
+  });
+  document.getElementById("result").innerText =
+    `점수: ${score} / ${questions.length}`;
+}
+</script>
+
+</body>
+</html>
